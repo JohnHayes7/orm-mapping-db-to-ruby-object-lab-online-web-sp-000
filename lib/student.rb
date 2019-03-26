@@ -30,7 +30,8 @@ class Student
   end
   
   def self.students_below_12th_grade
-    below_12th = []
+  
+    below_12 = []
     sql = <<-SQL
     SELECT * 
     FROM students
@@ -39,6 +40,7 @@ class Student
     
     row = DB[:conn].execute(sql)
     student = self.new_from_db(row)
+    below_12 << student
     # binding.pry
   end
   
