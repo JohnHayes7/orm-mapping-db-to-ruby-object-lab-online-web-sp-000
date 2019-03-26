@@ -43,9 +43,8 @@ class Student
     row.each do |s|
     student = self.new_from_db(s)
     below_12 << student
-     binding.pry
+     
     end
-    
   end
   
   def self.find_by_name(name)
