@@ -38,7 +38,7 @@ class Student
     SQL
     
     row = DB[:conn].execute(sql)
-    # binding.pry
+    binding.pry
   end
   
   def self.find_by_name(name)
