@@ -77,7 +77,7 @@ class Student
     LIMIT 1
     SQL
     
-    x = DB[:conn].execute(sql).map do |s|
+    DB[:conn].execute(sql).map do |s|
     self.new_from_db(s)
     end
   end
