@@ -40,6 +40,7 @@ class Student
     
     DB[:conn].execute(sql).map do |r|
     self.new_from_db(r)
+    binding.pry
     end
   end
   
