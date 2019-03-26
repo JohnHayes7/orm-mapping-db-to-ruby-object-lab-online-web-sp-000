@@ -39,6 +39,7 @@ class Student
     SQL
     
     row = DB[:conn].execute(sql)
+    
     row.each do |s|
     student = self.new_from_db(s)
     below_12 << student
