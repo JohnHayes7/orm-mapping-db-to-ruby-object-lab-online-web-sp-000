@@ -79,6 +79,7 @@ class Student
     
     DB[:conn].execute(sql).map do |s|
     self.new_from_db(s)
+    end
   end
   
   def save
