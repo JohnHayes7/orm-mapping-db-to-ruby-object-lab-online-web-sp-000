@@ -42,7 +42,7 @@ class Student
     row.each do |s|
     student = self.new_from_db(s)
     below_12 << student
-  end
+    end
      binding.pry
   end
   
