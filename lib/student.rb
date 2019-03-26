@@ -42,6 +42,7 @@ class Student
     
     row.each do |s|
     student = self.new_from_db(s)
+    binding.pry
     end
   end
   
