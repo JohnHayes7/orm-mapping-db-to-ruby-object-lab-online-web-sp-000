@@ -39,7 +39,7 @@ class Student
     
     row = DB[:conn].execute(sql)
     self.new_from_db(row)
-    binding.pry
+    # binding.pry
   end
   
   def self.find_by_name(name)
