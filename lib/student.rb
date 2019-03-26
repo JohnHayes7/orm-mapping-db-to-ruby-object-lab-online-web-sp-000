@@ -16,7 +16,7 @@ class Student
     FROM students
     SQL
     
-    DB[:conn].execute(sql)
+    x = DB[:conn].execute(sql)
   end
   
   def self.all_students_in_grade_9
