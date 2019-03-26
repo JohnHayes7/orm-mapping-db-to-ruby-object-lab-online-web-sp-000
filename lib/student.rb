@@ -17,6 +17,7 @@ class Student
     SQL
     
     x = DB[:conn].execute(sql)
+    binding.pry
   end
   
   def self.all_students_in_grade_9
